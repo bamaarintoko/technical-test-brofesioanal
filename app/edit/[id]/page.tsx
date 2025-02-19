@@ -1,6 +1,7 @@
 'use client'
 
-import { FormInput } from "@/app/add/page";
+import { FormInput } from "@/components/FormInput";
+// import { FormInput } from "@/app/add/page";
 import { updateUser } from "@/lib/store/slice/sliceUser";
 import { RootState } from "@/lib/store/store";
 import { useParams, useRouter } from "next/navigation"
