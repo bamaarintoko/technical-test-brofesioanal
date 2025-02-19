@@ -1,7 +1,7 @@
 'use client'
 import { getRandomInt } from "@/lib/functions";
 import { createUser } from "@/lib/store/slice/sliceUser";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 
 type InputHandler = (field: string) => (e: ChangeEvent<HTMLInputElement>) => void;
