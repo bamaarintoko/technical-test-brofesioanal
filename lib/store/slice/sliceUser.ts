@@ -37,6 +37,7 @@ interface UserState {
 const initialState: UserState = {
     data: []
 };
+
 const sliceUser = createSlice({
     name: 'sliceUser',
     initialState,
@@ -46,9 +47,6 @@ const sliceUser = createSlice({
                 (newUser) => !state.data.some((existingUser) => existingUser.id === newUser.id)
             );
             state.data = [...state.data, ...newUsers];
-
-            console.log('newUsers ', newUsers)
-            console.log('action : ', action.payload)
         },
         createUser(state, action) {
             state.data.push(action.payload)
