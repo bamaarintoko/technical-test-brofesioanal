@@ -62,9 +62,9 @@ export default function Home() {
 
 	return (
 		<div className="lg:max-w-[1024px] container mx-auto pt-4">
-			<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+			<div className="relative overflow-x-auto shadow-md sm:rounded-lg px-4">
 				<div className="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4">
-					<button onClick={handleCreateUser} type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none ">Add</button>
+					<button onClick={handleCreateUser} type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none ">Create User</button>
 					<div className="pb-4 bg-white ">
 						<label htmlFor="table-search" className="sr-only">Search</label>
 						<div className="relative mt-1">
